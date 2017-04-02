@@ -23,7 +23,7 @@ interface ModuleLoaderInterface
      *
      * @since [*next-version*]
      *
-     * @param array|Traversable|ModuleInterface $modules A module or a collection of modules. Default: array()
+     * @param ModuleInterface[]|Traversable $modules A collection of modules. Default: array()
      */
     public function load($modules = array());
 }
