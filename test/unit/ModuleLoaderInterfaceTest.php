@@ -1,6 +1,6 @@
 <?php
 
-namespace Dhii\Modular\FuncTest;
+namespace Dhii\Modular\UnitTest;
 
 use Dhii\Modular\ModuleLoaderInterface;
 use Xpmock\TestCase;

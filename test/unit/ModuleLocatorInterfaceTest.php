@@ -1,35 +1,35 @@
 <?php
 
-namespace Dhii\Modular\FuncTest;
+namespace Dhii\Modular\UnitTest;
 
-use Dhii\Modular\ModuleFactoryInterface;
+use Dhii\Modular\ModuleLocatorInterface;
 use Xpmock\TestCase;
 
 /**
- * Tests {@see Dhii\Modular\ModuleFactoryInterface}.
+ * Tests {@see Dhii\Modular\ModuleLocatorInterface}.
  *
  * @since [*next-version*]
  */
-class ModuleFactoryInterfaceTest extends TestCase
+class ModuleLocatorInterfaceTest extends TestCase
 {
     /**
      * The name of the test subject.
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Modular\\ModuleFactoryInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Modular\\ModuleLocatorInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since [*next-version*]
      *
-     * @return ModuleFactoryInterface
+     * @return ModuleLocatorInterface
      */
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-            ->make()
+            ->locate()
             ->new();
 
         return $mock;
@@ -45,7 +45,9 @@ class ModuleFactoryInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(
-            static::TEST_SUBJECT_CLASSNAME, $subject, 'Subject is not a valid instance.'
+            static::TEST_SUBJECT_CLASSNAME,
+            $subject,
+            'Subject is not a valid instance.'
         );
     }
 }

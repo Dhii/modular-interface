@@ -1,35 +1,35 @@
 <?php
 
-namespace Dhii\Modular\FuncTest;
+namespace Dhii\Modular\UnitTest;
 
-use Dhii\Modular\ModuleLocatorInterface;
+use Dhii\Modular\ModuleInterface;
 use Xpmock\TestCase;
 
 /**
- * Tests {@see Dhii\Modular\ModuleLocatorInterface}.
+ * Tests {@see Dhii\Modular\ModuleInterface}.
  *
  * @since [*next-version*]
  */
-class ModuleLocatorInterfaceTest extends TestCase
+class ModuleInterfaceTest extends TestCase
 {
     /**
      * The name of the test subject.
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Modular\\ModuleLocatorInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Modular\\ModuleInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since [*next-version*]
      *
-     * @return ModuleLocatorInterface
+     * @return ModuleInterface
      */
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-            ->locate()
+            ->getId()
             ->new();
 
         return $mock;
@@ -48,6 +48,12 @@ class ModuleLocatorInterfaceTest extends TestCase
             static::TEST_SUBJECT_CLASSNAME,
             $subject,
             'Subject is not a valid instance.'
+        );
+
+        $this->assertInstanceOf(
+            'Dhii\\Data\\IdAwareInterface',
+            $subject,
+            'Subject is not a valid IdAwareInterface instance.'
         );
     }
 }
