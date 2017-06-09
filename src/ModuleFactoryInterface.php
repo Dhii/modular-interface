@@ -2,8 +2,6 @@
 
 namespace Dhii\Modular;
 
-use Dhii\Data\StringableInterface as Stringable;
-
 /**
  * Something that can create module instances.
  *
@@ -18,14 +16,13 @@ use Dhii\Data\StringableInterface as Stringable;
 interface ModuleFactoryInterface
 {
     /**
-     * Creates a module instance.
+     * Creates a module based on its configuration.
      *
      * @since [*next-version*]
      *
-     * @param string|Stringable $id     The ID of the module to create.
-     * @param array             $config An array of additional configuration. Default: array()
+     * @param array[] $config A module configuration.
      *
-     * @return ModuleInterface
+     * @return ModuleInterface The new module
      */
-    public function make($id, array $config = array());
+    public function makeModule($config);
 }
