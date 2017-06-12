@@ -1,6 +1,6 @@
 <?php
 
-namespace Dhii\Modular;
+namespace Dhii\Modular\Module;
 
 use Dhii\Data\IdAwareInterface;
 

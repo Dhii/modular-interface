@@ -1,12 +1,12 @@
 <?php
 
-namespace Dhii\Modular\UnitTest;
+namespace Dhii\Modular\UnitTest\Locator;
 
-use Dhii\Modular\ModuleLocatorInterface;
+use Dhii\Modular\Locator\ModuleLocatorInterface;
 use Xpmock\TestCase;
 
 /**
- * Tests {@see Dhii\Modular\ModuleLocatorInterface}.
+ * Tests {@see Dhii\Modular\Locator\ModuleLocatorInterface}.
  *
  * @since [*next-version*]
  */
@@ -17,7 +17,7 @@ class ModuleLocatorInterfaceTest extends TestCase
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Modular\\ModuleLocatorInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Modular\\Locator\\ModuleLocatorInterface';
 
     /**
      * Creates a new instance of the test subject.

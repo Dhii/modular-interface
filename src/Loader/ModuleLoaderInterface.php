@@ -1,6 +1,6 @@
 <?php
 
-namespace Dhii\Modular;
+namespace Dhii\Modular\Loader;
 
 use Traversable;
 

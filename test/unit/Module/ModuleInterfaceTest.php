@@ -1,35 +1,35 @@
 <?php
 
-namespace Dhii\Modular\UnitTest;
+namespace Dhii\Modular\UnitTest\Module;
 
-use Dhii\Modular\ModuleFactoryInterface;
+use Dhii\Modular\Module\ModuleInterface;
 use Xpmock\TestCase;
 
 /**
- * Tests {@see Dhii\Modular\ModuleFactoryInterface}.
+ * Tests {@see Dhii\Modular\Module\ModuleInterface}.
  *
  * @since [*next-version*]
  */
-class ModuleFactoryInterfaceTest extends TestCase
+class ModuleInterfaceTest extends TestCase
 {
     /**
      * The name of the test subject.
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Modular\\ModuleFactoryInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Modular\\Module\\ModuleInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since [*next-version*]
      *
-     * @return ModuleFactoryInterface
+     * @return ModuleInterface
      */
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-            ->makeModule()
+            ->getId()
             ->new();
 
         return $mock;
@@ -45,7 +45,15 @@ class ModuleFactoryInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(
-            static::TEST_SUBJECT_CLASSNAME, $subject, 'Subject is not a valid instance.'
+            static::TEST_SUBJECT_CLASSNAME,
+            $subject,
+            'Subject is not a valid instance.'
+        );
+
+        $this->assertInstanceOf(
+            'Dhii\\Data\\IdAwareInterface',
+            $subject,
+            'Subject is not a valid IdAwareInterface instance.'
         );
     }
 }

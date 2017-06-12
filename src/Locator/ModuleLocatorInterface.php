@@ -1,6 +1,6 @@
 <?php
 
-namespace Dhii\Modular;
+namespace Dhii\Modular\Locator;
 
 /**
  * Something that can locate and retrieve module configuration.

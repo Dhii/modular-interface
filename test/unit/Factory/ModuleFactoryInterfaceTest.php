@@ -1,35 +1,35 @@
 <?php
 
-namespace Dhii\Modular\UnitTest;
+namespace Dhii\Modular\UnitTest\Factory;
 
-use Dhii\Modular\ModuleLoaderInterface;
+use Dhii\Modular\Factory\ModuleFactoryInterface;
 use Xpmock\TestCase;
 
 /**
- * Tests {@see Dhii\Modular\ModuleLoaderInterface}.
+ * Tests {@see Dhii\Modular\Factory\ModuleFactoryInterface}.
  *
  * @since [*next-version*]
  */
-class ModuleLoaderInterfaceTest extends TestCase
+class ModuleFactoryInterfaceTest extends TestCase
 {
     /**
      * The name of the test subject.
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Modular\\ModuleLoaderInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Modular\\Factory\\ModuleFactoryInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since [*next-version*]
      *
-     * @return ModuleLoaderInterface
+     * @return ModuleFactoryInterface
      */
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-            ->load()
+            ->makeModule()
             ->new();
 
         return $mock;

@@ -1,35 +1,35 @@
 <?php
 
-namespace Dhii\Modular\UnitTest;
+namespace Dhii\Modular\UnitTest\Loader;
 
-use Dhii\Modular\ModuleInterface;
+use Dhii\Modular\Loader\ModuleLoaderInterface;
 use Xpmock\TestCase;
 
 /**
- * Tests {@see Dhii\Modular\ModuleInterface}.
+ * Tests {@see Dhii\Modular\Loader\ModuleLoaderInterface}.
  *
  * @since [*next-version*]
  */
-class ModuleInterfaceTest extends TestCase
+class ModuleLoaderInterfaceTest extends TestCase
 {
     /**
      * The name of the test subject.
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Modular\\ModuleInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Modular\\Loader\\ModuleLoaderInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since [*next-version*]
      *
-     * @return ModuleInterface
+     * @return ModuleLoaderInterface
      */
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-            ->getId()
+            ->load()
             ->new();
 
         return $mock;
@@ -45,15 +45,7 @@ class ModuleInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(
-            static::TEST_SUBJECT_CLASSNAME,
-            $subject,
-            'Subject is not a valid instance.'
-        );
-
-        $this->assertInstanceOf(
-            'Dhii\\Data\\IdAwareInterface',
-            $subject,
-            'Subject is not a valid IdAwareInterface instance.'
+            static::TEST_SUBJECT_CLASSNAME, $subject, 'Subject is not a valid instance.'
         );
     }
 }
