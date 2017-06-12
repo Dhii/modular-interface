@@ -47,7 +47,7 @@ class ModuleAwareInterfaceTest extends TestCase
         $this->assertInstanceOf(
             static::TEST_SUBJECT_CLASSNAME,
             $subject,
-            'Subject is not a valid instance.'
+            'A valid instance of the test subject could not be created.'
         );
     }
 }
