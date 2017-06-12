@@ -23,7 +23,7 @@ interface ModuleFactoryInterface
      * @param array[] $config A module configuration.
      *
      * @throws CouldNotMakeModuleExceptionInterface If module could not be made.
-     * @throws ModuleFactoryExceptionInterface If some other failure occurs.
+     * @throws ModuleFactoryExceptionInterface      If some other failure occurs.
      *
      * @return ModuleInterface The new module
      */

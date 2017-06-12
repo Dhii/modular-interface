@@ -26,10 +26,10 @@ interface ModuleLoaderInterface
      *
      * @since [*next-version*]
      *
-     * @throws CouldNotLoadModuleExceptionInterface If a module could not be loaded.
-     * @throws ModuleLoaderExceptionInterface If some other failure occurs.
-     *
      * @param ModuleInterface[]|Traversable $modules A list of modules.
+     *
+     * @throws CouldNotLoadModuleExceptionInterface If a module could not be loaded.
+     * @throws ModuleLoaderExceptionInterface       If some other failure occurs.
      */
     public function load($modules = array());
 }
