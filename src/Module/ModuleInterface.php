@@ -2,7 +2,7 @@
 
 namespace Dhii\Modular\Module;
 
-use Dhii\Data\IdAwareInterface;
+use Dhii\Data\KeyAwareInterface;
 
 /**
  * Anything that represents a system module.
@@ -12,6 +12,6 @@ use Dhii\Data\IdAwareInterface;
  *
  * @since [*next-version*]
  */
-interface ModuleInterface extends IdAwareInterface
+interface ModuleInterface extends KeyAwareInterface
 {
 }

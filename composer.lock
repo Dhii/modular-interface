@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1e10611905dc9fd4962253509f9f8822",
+    "content-hash": "092584c5e02ae819ca404eb3a4c9247a",
     "packages": [
         {
-            "name": "dhii/data-identifiable-interface",
-            "version": "dev-master",
+            "name": "dhii/data-key-value-aware-interface",
+            "version": "v0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Dhii/data-identifiable-interface.git",
-                "reference": "59e160c85c9d9246ce51ad611ce2bb686ba3dc2d"
+                "url": "https://github.com/Dhii/data-key-value-aware-interface.git",
+                "reference": "220232bc9040fab78a6c039f5a4a5f9542317bdc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/data-identifiable-interface/zipball/59e160c85c9d9246ce51ad611ce2bb686ba3dc2d",
-                "reference": "59e160c85c9d9246ce51ad611ce2bb686ba3dc2d",
+                "url": "https://api.github.com/repos/Dhii/data-key-value-aware-interface/zipball/220232bc9040fab78a6c039f5a4a5f9542317bdc",
+                "reference": "220232bc9040fab78a6c039f5a4a5f9542317bdc",
                 "shasum": ""
             },
             "require": {
@@ -26,7 +26,7 @@
             "require-dev": {
                 "codeclimate/php-test-reporter": "<=0.3.2",
                 "dhii/php-cs-fixer-config": "dev-php-5.3",
-                "phpunit/phpunit": "^4.8",
+                "phpunit/phpunit": "4.*",
                 "ptrofimov/xpmock": "^1.1"
             },
             "type": "library",
@@ -45,8 +45,8 @@
                     "email": "development@dhii.co"
                 }
             ],
-            "description": "Interfaces for objects that are identifiable.",
-            "time": "2017-03-07 16:25:09"
+            "description": "Interfaces that aim to increase interoperability of value objects",
+            "time": "2017-01-21T17:35:30+00:00"
         }
     ],
     "packages-dev": [
@@ -1576,7 +1576,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-10T12:08:03+00:00"
+            "time": "2017-06-10 12:08:03"
         },
         {
             "name": "symfony/debug",
@@ -1852,7 +1852,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-06-09T14:24:12+00:00"
+            "time": "2017-06-09 14:24:12"
         },
         {
             "name": "symfony/process",
@@ -1901,7 +1901,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-09T13:37:35+00:00"
+            "time": "2017-06-09 13:37:35"
         },
         {
             "name": "symfony/stopwatch",
@@ -2061,7 +2061,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "dhii/data-identifiable-interface": 20,
         "dhii/php-cs-fixer-config": 20
     },
     "prefer-stable": false,

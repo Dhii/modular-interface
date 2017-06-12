@@ -29,7 +29,7 @@ class ModuleInterfaceTest extends TestCase
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-            ->getId()
+            ->getKey()
             ->new();
 
         return $mock;
@@ -51,7 +51,7 @@ class ModuleInterfaceTest extends TestCase
         );
 
         $this->assertInstanceOf(
-            'Dhii\\Data\\IdAwareInterface',
+            'Dhii\\Data\\KeyAwareInterface',
             $subject,
             'Subject is not a valid IdAwareInterface instance.'
         );

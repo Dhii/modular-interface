@@ -30,7 +30,7 @@ class ModuleExceptionInterfaceTest extends TestCase
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
             ->getModule()
-            ->getModuleCode()
+            ->getModuleKey()
             ->new();
 
         return $mock;
@@ -57,7 +57,7 @@ class ModuleExceptionInterfaceTest extends TestCase
             'Subject does not implement required interface'
         );
         $this->assertInstanceOf(
-            'Dhii\\Modular\\Module\\ModuleCodeAwareInterface',
+            'Dhii\\Modular\\Module\\ModuleKeyAwareInterface',
             $subject,
             'Subject does not implement required interface'
         );

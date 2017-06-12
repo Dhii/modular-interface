@@ -9,6 +9,6 @@ namespace Dhii\Modular\Module;
  */
 interface ModuleExceptionInterface extends
     ModuleAwareInterface,
-    ModuleCodeAwareInterface
+    ModuleKeyAwareInterface
 {
 }

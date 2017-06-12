@@ -2,34 +2,34 @@
 
 namespace Dhii\Modular\UnitTest\Module;
 
-use Dhii\Modular\Module\ModuleCodeAwareInterface;
+use Dhii\Modular\Module\ModuleKeyAwareInterface;
 use Xpmock\TestCase;
 
 /**
- * Tests {@see Dhii\Modular\Module\ModuleCodeAwareInterface}.
+ * Tests {@see Dhii\Modular\Module\ModuleKeyAwareInterface}.
  *
  * @since [*next-version*]
  */
-class ModuleCodeAwareInterfaceTest extends TestCase
+class ModuleKeyAwareInterfaceTest extends TestCase
 {
     /**
      * The name of the test subject.
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Modular\\Module\\ModuleCodeAwareInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Modular\\Module\\ModuleKeyAwareInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since [*next-version*]
      *
-     * @return ModuleCodeAwareInterface
+     * @return ModuleKeyAwareInterface
      */
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-            ->getModuleCode()
+            ->getModuleKey()
             ->new();
 
         return $mock;
