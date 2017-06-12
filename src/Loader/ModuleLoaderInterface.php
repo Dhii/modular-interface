@@ -19,7 +19,10 @@ use Traversable;
 interface ModuleLoaderInterface
 {
     /**
-     * Loads the given module or collection of modules.
+     * Loads a list of modules.
+     *
+     * The load order will be exactly as provided in the list.
+     * Will call `load()` on each module.
      *
      * @since [*next-version*]
      *
