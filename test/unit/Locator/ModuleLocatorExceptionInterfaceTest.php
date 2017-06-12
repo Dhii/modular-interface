@@ -47,7 +47,7 @@ class ModuleLocatorExceptionInterfaceTest extends TestCase
         $this->assertInstanceOf(
             static::TEST_SUBJECT_CLASSNAME,
             $subject,
-            'A valid instance of the test subject could not be created.'
+            'A valid instance of the test subject could not be created'
         );
         $this->assertInstanceOf(
             'Dhii\\Modular\\Locator\\ModuleLocatorAwareInterface', $subject, 'Subject does not implement reqired interface'
