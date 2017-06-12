@@ -22,6 +22,8 @@ interface ModuleFactoryInterface
      *
      * @param array[] $config A module configuration.
      *
+     * @throws CouldNotMakeModuleExceptionInterface If module could not be made
+     *
      * @return ModuleInterface The new module
      */
     public function makeModule($config);
