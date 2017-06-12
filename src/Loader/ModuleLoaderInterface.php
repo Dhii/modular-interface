@@ -29,7 +29,7 @@ interface ModuleLoaderInterface
      * @throws CouldNotLoadModuleExceptionInterface If a module could not be loaded.
      * @throws ModuleLoaderExceptionInterface If some other failure occurs.
      *
-     * @param ModuleInterface[]|Traversable $modules A collection of modules. Default: array()
+     * @param ModuleInterface[]|Traversable $modules A list of modules.
      */
     public function load($modules = array());
 }
