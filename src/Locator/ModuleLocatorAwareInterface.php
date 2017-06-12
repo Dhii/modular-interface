@@ -14,8 +14,8 @@ interface ModuleLocatorAwareInterface
      *
      * @since [*next-version*]
      *
-     * @return ModuleLocatorInterface| null The locator, if applicable;
-     *                                 otherwise null.
+     * @return ModuleLocatorInterface|null The locator, if applicable;
+     *                                     otherwise null.
      */
     public function getModuleLocator();
 }
