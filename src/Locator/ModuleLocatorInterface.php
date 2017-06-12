@@ -17,6 +17,8 @@ interface ModuleLocatorInterface
      *
      * @since [*next-version*]
      *
+     * @throws ModuleLocatorExceptionInterface If something went wrong while locating.
+     *
      * @return array The located module configurations. Each configuration is an associative array.
      *               No particular order or key format.
      */
