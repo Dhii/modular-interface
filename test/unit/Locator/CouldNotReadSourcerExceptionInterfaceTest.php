@@ -30,6 +30,7 @@ class CouldNotReadSourcerExceptionInterfaceTest extends TestCase
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
             ->getConfigSource()
+            ->getModuleLocator()
             ->new();
 
         return $mock;
@@ -48,6 +49,12 @@ class CouldNotReadSourcerExceptionInterfaceTest extends TestCase
             static::TEST_SUBJECT_CLASSNAME,
             $subject,
             'A valid instance of the test subject could not be created'
+        );
+        $this->assertInstanceOf(
+            'Dhii\\Modular\\Locator\\ModuleLocatorExceptionInterface', $subject, 'Subject does not implement reqired interface'
+        );
+        $this->assertInstanceOf(
+            'Dhii\\Modular\\Config\\ConfigSourceAwareInterface', $subject, 'Subject does not implement reqired interface'
         );
     }
 }
