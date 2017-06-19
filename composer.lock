@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "092584c5e02ae819ca404eb3a4c9247a",
+    "content-hash": "84ad5b83c41e6e8f9f7d88309dfe5d88",
     "packages": [
         {
             "name": "dhii/data-key-value-aware-interface",
@@ -47,6 +47,49 @@
             ],
             "description": "Interfaces that aim to increase interoperability of value objects",
             "time": "2017-01-21T17:35:30+00:00"
+        },
+        {
+            "name": "dhii/module-interface",
+            "version": "dev-task/initial-interfaces",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dhii/module-interface.git",
+                "reference": "0a2c7a08f91b43fdd3ea10db66be31d6ca992e11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dhii/module-interface/zipball/0a2c7a08f91b43fdd3ea10db66be31d6ca992e11",
+                "reference": "0a2c7a08f91b43fdd3ea10db66be31d6ca992e11",
+                "shasum": ""
+            },
+            "require": {
+                "dhii/data-key-value-aware-interface": "^0.1",
+                "php": "^5.3 | ^7.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "<=0.3.2",
+                "dhii/php-cs-fixer-config": "dev-php-5.3",
+                "phpunit/phpunit": "^4.8",
+                "ptrofimov/xpmock": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dhii\\Modular\\Module\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dhii Team",
+                    "email": "development@dhii.co"
+                }
+            ],
+            "description": "Interfaces for modules",
+            "time": "2017-06-19 07:44:11"
         }
     ],
     "packages-dev": [
@@ -2061,6 +2104,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "dhii/module-interface": 20,
         "dhii/php-cs-fixer-config": 20
     },
     "prefer-stable": false,
