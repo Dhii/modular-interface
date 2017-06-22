@@ -2,6 +2,8 @@
 
 namespace Dhii\Modular\Factory;
 
+use Dhii\Modular\Module\ModuleInterface;
+
 /**
  * Something that can create module instances.
  *
