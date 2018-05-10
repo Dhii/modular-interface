@@ -10,6 +10,7 @@
         }
     ],
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "php": "^5.3 | ^7.0",
         "dhii/module-interface": "dev-develop"
@@ -23,6 +24,12 @@
     "autoload": {
         "psr-4": {
             "Dhii\\Modular\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dhii\\Modular\\UnitTest\\": "test/unit",
+            "Dhii\\Modular\\FuncTest\\": "test/functional"
         }
     },
     "scripts": {
