@@ -1,4 +1,4 @@
-# Dhii - modular-interface
+# Dhii - Modular Interface
 
 [![Build Status](https://travis-ci.org/Dhii/modular-interface.svg?branch=develop)](https://travis-ci.org/Dhii/modular-interface)
 [![Code Climate](https://codeclimate.com/github/Dhii/modular-interface/badges/gpa.svg)](https://codeclimate.com/github/Dhii/modular-interface)
