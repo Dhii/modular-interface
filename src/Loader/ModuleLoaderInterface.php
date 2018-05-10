@@ -3,6 +3,7 @@
 namespace Dhii\Modular\Loader;
 
 use Traversable;
+use Dhii\Modular\Module\ModuleInterface;
 
 /**
  * Something that can load modules.
